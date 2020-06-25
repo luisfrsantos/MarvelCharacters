@@ -43,11 +43,11 @@ class CharactersActivity : AppCompatActivity(), UpdateListInterface {
     private fun observers() {
         model.characterListObserver.observe(this, Observer { characters -> updateList(characters!!) })
         model.errorObserver.observe(this, Observer {
-             AlertDialog.Builder(this, R.style.Theme_AppCompat_Dialog)
-                     .setTitle(getString(R.string.title_error))
-                     .setPositiveButton("Ok") { dialog, _ -> dialog.dismiss() }
-                     .setMessage(it)
-                     .show()
+            AlertDialog.Builder(this, R.style.Theme_AppCompat_Dialog)
+                    .setTitle(getString(R.string.title_error))
+                    .setPositiveButton("Ok") { dialog, _ -> dialog.dismiss() }
+                    .setMessage(it)
+                    .show()
         })
     }
 

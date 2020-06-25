@@ -2,7 +2,6 @@ package com.example.luisfernandorodrigues.apimarvel.helper
 
 import java.math.BigInteger
 import java.text.SimpleDateFormat
-import java.util.*
 
 private const val PATTERN = "yyyyMMddHHmmss"
 private const val MD5 = "MD5"
