@@ -10,7 +10,7 @@ private const val SIGUM = 1
 
 class HashGenerate {
 
-    val ts: String = SimpleDateFormat(PATTERN).format(Date())
+    val ts: String = SimpleDateFormat(PATTERN).format(java.util.Date())
 
     fun getHash(ts: String, privateKey: String, apiKey: String): String {
         val canonicalString = ts + privateKey + apiKey
